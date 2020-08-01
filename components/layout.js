@@ -1,20 +1,17 @@
-import Head from 'next/head'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import styles from "./layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+const name = "Efekan ÇAKIR";
+export const siteTitle = "Efekan Çakır'ın Web Sitesi";
 
-export default function Layout({ children, home }) {
+function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
+        <meta name="description" content="Efekan Çakır'ın Web Sitesi" />
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
@@ -27,11 +24,14 @@ export default function Layout({ children, home }) {
       <header className={styles.header}>
         {home ? (
           <>
-            <img
-              src="/images/profile.jpg"
-              className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-              alt={name}
-            />
+            <div className={`${styles.imageFrame} ${utilStyles.borderCircle}`}>
+              <img
+                src="/images/profile-image.png"
+                className={`${styles.headerHomeImage}`}
+                alt={name}
+              />
+            </div>
+
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
@@ -54,13 +54,42 @@ export default function Layout({ children, home }) {
         )}
       </header>
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
+      <footer>
+        <p>
+          <small>
+            <center>
+              <a target="_blank" href="https://twitter.com/cakirefekan">
+                twitter
+              </a>{" "}
+              -{" "}
+              <a target="_blank" href="https://instagram.com/cakirefekar_">
+                instagram
+              </a>{" "}
+              -{" "}
+              <a target="_blank" href="https://linkedin.com/in/cakirefekan">
+                linkedin
+              </a>{" "}
+              -{" "}
+              <a target="_blank" href="https://www.cakirefekan.com">
+                blog
+              </a>{" "}
+            </center>
+          </small>
+        </p>
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        )}
+      </footer>{" "}
+      <style global jsx>{`
+        body {
+          background: #fffefc;
+        }
+      `}</style>
     </div>
-  )
+  );
 }
+export default Layout;

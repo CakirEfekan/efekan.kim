@@ -16,10 +16,31 @@
 }
 
 .headerHomeImage {
-  width: 8rem;
-  height: 8rem;
+  width: 100%;
+  padding-top: 100%;
+  margin-top: -100%;
+  filter: grayscale(100%);
+  transition: 0.75s;
+}
+.headerHomeImage:hover {
+  filter: grayscale(0%);
+  width: 120%;
+  max-width: 120% !important;
+  margin-left: -10%;
+  padding-top: 120%;
+  margin-top: -130%;
 }
 
 .backToHome {
   margin: 3rem 0 0;
+}
+.imageFrame {
+  width: 8rem;
+  height: 8rem;
+  margin: auto;
+  overflow: hidden;
+  transition: 0.75s;
+}
+.imageFrame:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
