@@ -84,7 +84,7 @@ function Layout({ children, home }) {
             </center>
           </small>
         </p>
-        <p className={utilStyles.templateNote}>
+        <p className={styles.templateNote}>
           made it with starter template for{" "}
           <a href="https://nextjs.org/learn/basics/create-nextjs-app">
             Learn Next.js.
