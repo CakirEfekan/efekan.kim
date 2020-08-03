@@ -70,11 +70,25 @@ function Layout({ children, home }) {
                 linkedin
               </a>{" "}
               -{" "}
+              <a target="_blank" href="https://github.com/CakirEfekan">
+                github
+              </a>{" "}
+              -{" "}
+              <a target="_blank" href="https://issuu.com/cakirefekan">
+                issuu
+              </a>{" "}
+              -{" "}
               <a target="_blank" href="https://www.cakirefekan.com">
                 blog
               </a>{" "}
             </center>
           </small>
+        </p>
+        <p className={utilStyles.templateNote}>
+          made it with starter template for{" "}
+          <a href="https://nextjs.org/learn/basics/create-nextjs-app">
+            Learn Next.js.
+          </a>
         </p>
         {!home && (
           <div className={styles.backToHome}>
@@ -86,6 +100,11 @@ function Layout({ children, home }) {
       </footer>{" "}
       <style global jsx>{`
         body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100vw;
+          height: 100vh;
           background: #fffefc;
         }
       `}</style>
