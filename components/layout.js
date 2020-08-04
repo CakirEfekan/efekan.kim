@@ -62,6 +62,10 @@ function Layout({ children, home }) {
                 twitter
               </a>{" "}
               -{" "}
+              <a target="_blank" href="https://www.goodreads.com/cakirefekan">
+                goodreads
+              </a>{" "}
+              -{" "}
               <a target="_blank" href="https://instagram.com/cakirefekar_">
                 instagram
               </a>{" "}
