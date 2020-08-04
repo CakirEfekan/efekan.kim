@@ -93,7 +93,7 @@ function Layout({ children, home }) {
               <a
                 target="_blank"
                 title="@cakirefekan"
-                href="https://github.com/CakirEfekan"
+                href="https://github.com/cakirefekan"
               >
                 github
               </a>{" "}
