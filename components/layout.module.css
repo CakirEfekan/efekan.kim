@@ -39,7 +39,8 @@
   width: 8rem;
   height: 8rem;
   margin: auto;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   transition: all 0.75s ease-in-out;
   -webkit-transition: all 0.75s ease-in-out;
 }
