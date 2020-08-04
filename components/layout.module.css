@@ -16,6 +16,7 @@
 }
 
 .headerHomeImage {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   width: 100%;
   padding-top: 100%;
   margin-top: -100%;
@@ -32,7 +33,6 @@
   margin: 3rem 0 0;
 }
 .imageFrame {
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
   width: 8rem;
   height: 8rem;
   margin: auto;
