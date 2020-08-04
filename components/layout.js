@@ -58,31 +58,59 @@ function Layout({ children, home }) {
         <p>
           <small>
             <center>
-              <a target="_blank" href="https://twitter.com/cakirefekan">
+              <a
+                target="_blank"
+                title="@cakirefekan"
+                href="https://twitter.com/cakirefekan"
+              >
                 twitter
               </a>{" "}
               -{" "}
-              <a target="_blank" href="https://www.goodreads.com/cakirefekan">
+              <a
+                target="_blank"
+                title="@cakirefekan"
+                href="https://www.goodreads.com/cakirefekan"
+              >
                 goodreads
               </a>{" "}
               -{" "}
-              <a target="_blank" href="https://instagram.com/cakirefekar_">
+              <a
+                target="_blank"
+                title="@cakirefekar_"
+                href="https://instagram.com/cakirefekar_"
+              >
                 instagram
               </a>{" "}
               -{" "}
-              <a target="_blank" href="https://linkedin.com/in/cakirefekan">
+              <a
+                target="_blank"
+                title="@cakirefekan"
+                href="https://linkedin.com/in/cakirefekan"
+              >
                 linkedin
               </a>{" "}
               -{" "}
-              <a target="_blank" href="https://github.com/CakirEfekan">
+              <a
+                target="_blank"
+                title="@cakirefekan"
+                href="https://github.com/CakirEfekan"
+              >
                 github
               </a>{" "}
               -{" "}
-              <a target="_blank" href="https://issuu.com/cakirefekan">
+              <a
+                target="_blank"
+                title="@cakirefekan"
+                href="https://issuu.com/cakirefekan"
+              >
                 issuu
               </a>{" "}
               -{" "}
-              <a target="_blank" href="https://www.cakirefekan.com">
+              <a
+                target="_blank"
+                title="@cakirefekan"
+                href="https://www.cakirefekan.com"
+              >
                 blog
               </a>{" "}
             </center>
