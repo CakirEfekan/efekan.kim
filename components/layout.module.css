@@ -19,17 +19,13 @@
   width: 100%;
   padding-top: 100%;
   margin-top: -100%;
+  transition: transform 0.5s, filter 1.5s ease-in-out, margin 0.5s;
   filter: grayscale(100%);
-  transition: all 0.75s ease-in-out;
-  -webkit-transition: all 0.75s ease-in-out;
 }
 .headerHomeImage:hover {
-  filter: grayscale(0%);
-  width: 120%;
-  max-width: 120% !important;
-  margin-left: -10%;
-  padding-top: 120%;
-  margin-top: -130%;
+  margin-top: -105%;
+  filter: grayscale(0);
+  transform: scale(1.1);
 }
 
 .backToHome {
@@ -41,8 +37,8 @@
   margin: auto;
   overflow-x: hidden;
   overflow-y: hidden;
-  transition: all 0.75s ease-in-out;
-  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 .imageFrame:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
