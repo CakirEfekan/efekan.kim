@@ -22,6 +22,9 @@
 .DS_Store
 .env*
 
+# posts
+/posts/
+
 # debug
 npm-debug.log*
 yarn-debug.log*

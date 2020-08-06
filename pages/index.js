@@ -4,7 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 
 function Home() {
   return (
-    <Layout home>
+    <Layout dir={`home`} pageTitle={`Efekan ÇAKIR`}>
       <Head>
         <title>{siteTitle}</title>
       </Head>

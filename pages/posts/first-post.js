@@ -1,10 +1,10 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout from '../../components/layout'
+import Head from "next/head";
+import Link from "next/link";
+import Layout from "../../components/layout";
 
 export default function FirstPost() {
   return (
-    <Layout>
+    <Layout kitap>
       <Head>
         <title>First Post</title>
       </Head>
@@ -15,5 +15,5 @@ export default function FirstPost() {
         </Link>
       </h2>
     </Layout>
-  )
+  );
 }

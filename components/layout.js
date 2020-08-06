@@ -6,7 +6,7 @@ import Link from "next/link";
 const name = "Efekan ÇAKIR";
 export const siteTitle = "Efekan Çakır'ın Web Sitesi";
 
-function Layout({ children, home }) {
+function Layout({ children, dir, pageTitle }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -22,7 +22,7 @@ function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
+        {dir == "home" ? (
           <>
             <div className={`${styles.imageFrame} ${utilStyles.borderCircle}`}>
               <img
@@ -32,24 +32,11 @@ function Layout({ children, home }) {
               />
             </div>
 
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl}>{pageTitle}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
+            <h1 className={utilStyles.heading2Xl}>{pageTitle}</h1>
           </>
         )}
       </header>
@@ -58,6 +45,7 @@ function Layout({ children, home }) {
         <p>
           <small>
             <center>
+              -
               <a
                 target="_blank"
                 title="@cakirefekan"
@@ -66,14 +54,10 @@ function Layout({ children, home }) {
                 twitter
               </a>{" "}
               -{" "}
-              <a
-                target="_blank"
-                title="@cakirefekan"
-                href="https://www.goodreads.com/cakirefekan"
-              >
-                goodreads
-              </a>{" "}
-              -{" "}
+              <Link href={"/library"}>
+                <a title="kitaplığım">kitaplığım</a>
+              </Link>{" "}
+              &nbsp; -{" "}
               <a
                 target="_blank"
                 title="@cakirefekar_"
@@ -116,10 +100,10 @@ function Layout({ children, home }) {
             </center>
           </small>
         </p>
-        {!home && (
+        {!dir && (
           <div className={styles.backToHome}>
             <Link href="/">
-              <a>← Back to home</a>
+              <a>← Anasayfa</a>
             </Link>
           </div>
         )}
