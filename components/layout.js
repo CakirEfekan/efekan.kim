@@ -1,10 +1,10 @@
-import Head from "next/head";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import Head from 'next/head'
+import styles from './layout.module.css'
+import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
 
-const name = "Efekan ÇAKIR";
-export const siteTitle = "Efekan Çakır'ın Web Sitesi";
+const name = 'Efekan ÇAKIR'
+export const siteTitle = "Efekan Çakır'ın Web Sitesi"
 
 function Layout({ children, dir, pageTitle }) {
   return (
@@ -22,7 +22,7 @@ function Layout({ children, dir, pageTitle }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {dir == "home" ? (
+        {dir == 'home' ? (
           <>
             <div className={`${styles.imageFrame} ${utilStyles.borderCircle}`}>
               <img
@@ -52,51 +52,51 @@ function Layout({ children, dir, pageTitle }) {
                 href="https://twitter.com/cakirefekan"
               >
                 twitter
-              </a>{" "}
-              -{" "}
-              <Link href={"/library"}>
+              </a>{' '}
+              -{' '}
+              <Link href={'/library'}>
                 <a title="kitaplığım">kitaplığım</a>
-              </Link>{" "}
-              &nbsp; -{" "}
+              </Link>{' '}
+              &nbsp; -{' '}
               <a
                 target="_blank"
                 title="@cakirefekar_"
                 href="https://instagram.com/cakirefekar_"
               >
                 instagram
-              </a>{" "}
-              -{" "}
+              </a>{' '}
+              -{' '}
               <a
                 target="_blank"
                 title="@cakirefekan"
                 href="https://linkedin.com/in/cakirefekan"
               >
                 linkedin
-              </a>{" "}
-              -{" "}
+              </a>{' '}
+              -{' '}
               <a
                 target="_blank"
                 title="@cakirefekan"
                 href="https://github.com/cakirefekan"
               >
                 github
-              </a>{" "}
-              -{" "}
+              </a>{' '}
+              -{' '}
               <a
                 target="_blank"
                 title="@cakirefekan"
                 href="https://issuu.com/cakirefekan"
               >
                 issuu
-              </a>{" "}
-              -{" "}
+              </a>{' '}
+              -{' '}
               <a
                 target="_blank"
                 title="@cakirefekan"
                 href="https://www.cakirefekan.com"
               >
                 blog
-              </a>{" "}
+              </a>{' '}
             </center>
           </small>
         </p>
@@ -107,7 +107,7 @@ function Layout({ children, dir, pageTitle }) {
             </Link>
           </div>
         )}
-      </footer>{" "}
+      </footer>{' '}
       <style global jsx>{`
         body {
           display: flex;
@@ -119,6 +119,6 @@ function Layout({ children, dir, pageTitle }) {
         }
       `}</style>
     </div>
-  );
+  )
 }
-export default Layout;
+export default Layout

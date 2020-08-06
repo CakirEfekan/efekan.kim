@@ -11,10 +11,9 @@
     "next": "9.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "sax": "^1.2.4",
-    "xml-js": "^1.6.11"
+    "xml-js": "1.6.11"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "2.0.5"
   }
 }
