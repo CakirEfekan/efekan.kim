@@ -54,9 +54,10 @@ function Layout({ children, dir, pageTitle }) {
                 twitter
               </a>{' '}
               -{' '}
-              <Link href={'/library'}>
-                <a title="kitaplığım">kitaplığım</a>
-              </Link>{' '}
+                <a 
+                  href={'https://www.goodreads.com/cakirefekan'
+                  title="cakirefekan">kitaplığım</a>
+              {' '}
               &nbsp; -{' '}
               <a
                 target="_blank"
