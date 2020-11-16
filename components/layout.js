@@ -55,8 +55,12 @@ function Layout({ children, dir, pageTitle }) {
               </a>{' '}
               -{' '}
                 <a 
+                  target="_blank"
                   href="https://www.goodreads.com/cakirefekan"
-                  title="cakirefekan">kitaplığım</a>
+                  title="cakirefekan"
+                 >
+                   kitaplığım
+                </a>
               {' '}
               &nbsp; -{' '}
               <a
